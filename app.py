@@ -1,5 +1,4 @@
 import streamlit as st
-from pyngrok import ngrok
 
 # Name your company
 company_name = "WaterNow"
