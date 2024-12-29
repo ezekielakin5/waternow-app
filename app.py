@@ -10,8 +10,8 @@ def main():
         """
         <style>
         body {
-            background-color: #f0f8ff;
-            color: #333;
+            background-color: #e0f7fa;
+            color: #002f6c;
             font-family: Arial, sans-serif;
         }
         .stButton > button {
@@ -49,7 +49,7 @@ def main():
     # Add a banner graphic
     st.image(
         "https://via.placeholder.com/800x200.png?text=Revolutionizing+Water+Access", 
-        use_column_width=True
+        use_container_width=True
     )
 
     # Features Section
@@ -76,7 +76,7 @@ def main():
     # Add a graphic for "How It Works"
     st.image(
         "https://via.placeholder.com/600x300.png?text=How+It+Works", 
-        use_column_width=True
+        use_container_width=True
     )
 
     # Call to Action Section
@@ -92,7 +92,21 @@ def main():
     with col2:
         st.button("Sign Up")
 
+    # Investors Section
+    st.markdown("## For Investors")
+    st.markdown(
+        "WaterNow aligns with the United Nations Sustainable Development Goals (SDGs), particularly Goal 6: Clean Water and Sanitation. By providing automated solutions for water access, we contribute to global water security, improve community health, and drive economic development. Investing in WaterNow means supporting innovation in sustainable water management while achieving measurable social impact."
+    )
+
+    # Sign-Up Section for Borehole Owners
+    st.markdown("## Add Your Borehole to WaterNow")
+    st.markdown(
+        "Are you a borehole owner looking to streamline your water sales and maximize your reach? Join the WaterNow network today and enjoy automated solutions that save time and increase efficiency."
+    )
+    st.button("Add My Borehole")
+
 if __name__ == "__main__":
     main()
+
 
 
