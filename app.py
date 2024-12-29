@@ -4,7 +4,6 @@ import streamlit as st
 company_name = "WaterNow"
 
 # Streamlit app
-
 def main():
     # Title Section
     st.title(f"Welcome to {company_name}")
@@ -40,10 +39,6 @@ def main():
     )
     st.button("Learn More")
 
-# Run the app in Colab
 if __name__ == "__main__":
-    public_url = ngrok.connect(8501)
-    print(f"Streamlit App URL: {public_url}")
-    st._is_running_with_streamlit = True
-    st.sidebar.info("Streamlit Web App")
     main()
+
